@@ -63,6 +63,7 @@ int getPairsWithDifferenceK(int *input, int n, int k)
         {
             if (m.count(input[i] - k) > 0)
                 count = count + m[input[i] - k];
+            m[input[i]]--;
         }
     }
     else if (k == 0)
